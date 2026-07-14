@@ -1,0 +1,12 @@
+/target/
+/dist/
+/GitHub-Release-*/
+/ProcessGuard.exe
+/ProcessGuard_Report.txt
+/ProcessGuard_Settings.txt
+/ProcessGuard_Sentinel_History.txt
+/ProcessGuard_Snapshot.txt
+*.log
+*.pdb
+Thumbs.db
+.DS_Store

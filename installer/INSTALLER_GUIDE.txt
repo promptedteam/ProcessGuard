@@ -1,0 +1,41 @@
+PROCESS GUARD 1.0.2
+INSTALLATION AND SAFETY GUIDE
+
+WHAT PROCESS GUARD DOES
+
+Process Guard is a small native Windows process manager built in Rust. It groups related processes, shows live CPU, memory, disk, network, thread and handle activity, and classifies processes with green, orange and red safety guidance.
+
+The Monitor Center provides detailed performance, process-tree, connection, signature, executable and snapshot reports without mixing monitoring data into the AI chat.
+
+Sentinel is the built-in chat experience. It can use Codex CLI, Claude CLI, Gemini CLI, or one of ten user-configured API providers: OpenAI, Anthropic, Google Gemini, xAI, Groq, Mistral AI, Cohere, DeepSeek, OpenRouter, and Together AI. Process Guard does not install or bundle an AI model.
+
+CLI modes use the selected command-line tool's existing local sign-in. API modes are enabled only in the installed copy. API keys are stored as generic credentials in Windows Credential Manager for the current Windows account. They are never written to ProcessGuard_Settings.txt or bundled into the application, source archive, or GitHub files.
+
+When API mode is used, the selected process context, conversation prompt, and API key are sent only to the chosen provider to complete that request. The provider's pricing, retention, account, model-access, and acceptable-use terms apply. Model availability changes over time, so Sentinel's model ID field remains editable.
+
+Sentinel labels suggested models as Included, Free Tier, Standard, or Premium. A genuine free/included option is placed first when the provider offers one. Providers without a guaranteed free API model place a lower-cost/default option first and say that billing may apply. Before any provider/model change is saved, Process Guard sends a tiny connectivity test. Settings and new API keys are committed only when that engine and exact model return a valid response; the test itself may consume quota or incur a small provider charge.
+
+IMPORTANT SAFETY INFORMATION
+
+Safety labels are guidance, not a guarantee. Ending any process can close applications, interrupt downloads or lose unsaved work. Windows core, security, service and protected processes are blocked or treated cautiously. Review the process name, publisher, path and reason before taking action.
+
+Process Guard starts in normal user mode. Its Admin control relaunches the app with elevated rights only when you request it. Elevated mode can affect more processes and should be used carefully.
+
+INSTALLATION
+
+The default per-user location is:
+%LOCALAPPDATA%\Programs\Process Guard
+
+This location does not require an installation-time administrator prompt and allows Process Guard to save Sentinel history, watchlists, rules, snapshots and reports. Setup creates a Start Menu shortcut. Desktop and start-with-Windows shortcuts are optional.
+
+PRIVACY AND LOCAL DATA
+
+Saved chats, pinned chats, non-secret settings, snapshots and reports remain on this PC beside the installed application. API keys remain in Windows Credential Manager for the current Windows account. During uninstall, you can choose whether to remove all generated files and API credentials or preserve them for a later reinstall.
+
+UPDATES AND REMOVAL
+
+Running a newer Process Guard setup upgrades the existing per-user installation. You can uninstall from Windows Settings > Apps > Installed apps or from the Process Guard Start Menu folder. The uninstall wizard removes the application and shortcuts, then lets you decide whether to remove saved user data and Sentinel API credentials.
+
+OPEN SOURCE
+
+Process Guard is open-source software released under the MIT License. The source archive distributed with the GitHub release contains the Rust application, installer definition, icon, documentation, and build script. It never contains local history, reports, settings, snapshots, or API credentials.

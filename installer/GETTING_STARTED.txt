@@ -1,0 +1,19 @@
+PROCESS GUARD - GETTING STARTED
+
+1. Launch Process Guard from the Start Menu.
+2. Use Search or the table headers to find and filter process groups.
+3. Expand a group to inspect individual process IDs.
+4. Read the color and Safety columns before ending anything:
+   Green means lower risk, orange means caution, and red means blocked or high risk.
+5. Right-click a row for process-specific actions.
+6. Open Monitor Center for live reports that do not require a selection.
+7. Open Help > Sentinel AI Settings to choose Codex CLI, Claude CLI, Gemini CLI, or an API provider and model.
+8. Read each model's Included, Free Tier, Standard, or Premium label. Free access always depends on current provider quotas and account eligibility.
+9. CLI engines must already be installed and signed in. For API mode, paste your own key; Windows Credential Manager protects it for this Windows account.
+10. Choose Test + Save + Restart. Process Guard saves the provider, model, and any new key only after that exact configuration responds successfully.
+11. Select a process and choose Ask Sentinel for an explanation. API mode sends the selected process context and prompt to the provider you selected.
+12. Use the Admin control only when a protected action genuinely requires elevation.
+
+Process Guard minimizes to the Windows notification area. Restore it from the tray icon or exit it from the application menu.
+
+Uninstall from Windows Settings > Apps > Installed apps or from Start > Process Guard > Uninstall Process Guard.
